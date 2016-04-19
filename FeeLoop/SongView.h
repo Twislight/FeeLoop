@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "MenuModel.h"
 
 @class MenuModel;
 
 @interface SongView : UITableViewController
 
 @property (nonatomic,strong) MenuModel *song;
+
+@property (nonatomic) SongListType listType;
+@property (nonatomic,strong) NSArray *songItems;
+@property (strong) MPMediaQuery *songQuery;
 
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 //歌曲信息类型
-typedef enum { song_list, album_list, artist_list,compilations_list, composers_list, list_num } SongListType;
+typedef enum { song_list, album_list, artist_list,compilation_list, composer_list, list_num } SongListType;
 
 @interface MenuModel : NSObject
 
