@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22A272D1CC5CFA300B80A54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A272C1CC5CFA300B80A54 /* main.m */; };
+		F22A27301CC5CFA300B80A54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A272F1CC5CFA300B80A54 /* AppDelegate.m */; };
+		F22A27361CC5CFA300B80A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22A27341CC5CFA300B80A54 /* Main.storyboard */; };
+		F22A27381CC5CFA300B80A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22A27371CC5CFA300B80A54 /* Assets.xcassets */; };
+		F22A273B1CC5CFA300B80A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22A27391CC5CFA300B80A54 /* LaunchScreen.storyboard */; };
+		F22A27461CC5CFA300B80A54 /* FeeLoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27451CC5CFA300B80A54 /* FeeLoopTests.m */; };
+		F22A27511CC5CFA300B80A54 /* FeeLoopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27501CC5CFA300B80A54 /* FeeLoopUITests.m */; };
+		F22A275F1CC5CFCB00B80A54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22A275E1CC5CFCB00B80A54 /* AVFoundation.framework */; };
+		F22A27611CC5CFD200B80A54 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22A27601CC5CFD200B80A54 /* MediaPlayer.framework */; };
+		F22A27681CC5D0A600B80A54 /* SongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27671CC5D0A600B80A54 /* SongModel.m */; };
+		F22A276E1CC5D18500B80A54 /* SongView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A276D1CC5D18500B80A54 /* SongView.m */; };
+		F22A27751CC5F09A00B80A54 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27741CC5F09A00B80A54 /* MenuView.m */; };
+		F22A277E1CC6043000B80A54 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A277D1CC6043000B80A54 /* MenuModel.m */; };
+		F22A278E1CC61ECF00B80A54 /* img_list_albums.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27801CC61ECF00B80A54 /* img_list_albums.png */; };
+		F22A278F1CC61ECF00B80A54 /* img_list_albums@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27811CC61ECF00B80A54 /* img_list_albums@2x.png */; };
+		F22A27901CC61ECF00B80A54 /* img_list_artists.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27821CC61ECF00B80A54 /* img_list_artists.png */; };
+		F22A27911CC61ECF00B80A54 /* img_list_artists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27831CC61ECF00B80A54 /* img_list_artists@2x.png */; };
+		F22A27921CC61ECF00B80A54 /* img_list_compilations.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27841CC61ECF00B80A54 /* img_list_compilations.png */; };
+		F22A27931CC61ECF00B80A54 /* img_list_compilations@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27851CC61ECF00B80A54 /* img_list_compilations@2x.png */; };
+		F22A27941CC61ECF00B80A54 /* img_list_composers.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27861CC61ECF00B80A54 /* img_list_composers.png */; };
+		F22A27951CC61ECF00B80A54 /* img_list_composers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27871CC61ECF00B80A54 /* img_list_composers@2x.png */; };
+		F22A27961CC61ECF00B80A54 /* img_list_playlists.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27881CC61ECF00B80A54 /* img_list_playlists.png */; };
+		F22A27971CC61ECF00B80A54 /* img_list_playlists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A27891CC61ECF00B80A54 /* img_list_playlists@2x.png */; };
+		F22A27981CC61ECF00B80A54 /* img_list_songs.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278A1CC61ECF00B80A54 /* img_list_songs.png */; };
+		F22A27991CC61ECF00B80A54 /* img_list_songs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278B1CC61ECF00B80A54 /* img_list_songs@2x.png */; };
+		F22A279A1CC61ECF00B80A54 /* img_no_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278C1CC61ECF00B80A54 /* img_no_cover.png */; };
+		F22A279B1CC61ECF00B80A54 /* img_no_cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278D1CC61ECF00B80A54 /* img_no_cover@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F22A27421CC5CFA300B80A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22A27201CC5CFA300B80A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22A27271CC5CFA300B80A54;
+			remoteInfo = FeeLoop;
+		};
+		F22A274D1CC5CFA300B80A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22A27201CC5CFA300B80A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22A27271CC5CFA300B80A54;
+			remoteInfo = FeeLoop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F22A27281CC5CFA300B80A54 /* FeeLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeeLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22A272C1CC5CFA300B80A54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22A272E1CC5CFA300B80A54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F22A272F1CC5CFA300B80A54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F22A27351CC5CFA300B80A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22A27371CC5CFA300B80A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22A273A1CC5CFA300B80A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F22A273C1CC5CFA300B80A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22A27411CC5CFA300B80A54 /* FeeLoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeeLoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22A27451CC5CFA300B80A54 /* FeeLoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeeLoopTests.m; sourceTree = "<group>"; };
+		F22A27471CC5CFA300B80A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22A274C1CC5CFA300B80A54 /* FeeLoopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeeLoopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22A27501CC5CFA300B80A54 /* FeeLoopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeeLoopUITests.m; sourceTree = "<group>"; };
+		F22A27521CC5CFA300B80A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22A275E1CC5CFCB00B80A54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F22A27601CC5CFD200B80A54 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F22A27661CC5D0A600B80A54 /* SongModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongModel.h; sourceTree = "<group>"; };
+		F22A27671CC5D0A600B80A54 /* SongModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongModel.m; sourceTree = "<group>"; };
+		F22A276C1CC5D18500B80A54 /* SongView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongView.h; sourceTree = "<group>"; };
+		F22A276D1CC5D18500B80A54 /* SongView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongView.m; sourceTree = "<group>"; };
+		F22A27731CC5F09A00B80A54 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		F22A27741CC5F09A00B80A54 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		F22A277C1CC6043000B80A54 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		F22A277D1CC6043000B80A54 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		F22A27801CC61ECF00B80A54 /* img_list_albums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_albums.png; sourceTree = "<group>"; };
+		F22A27811CC61ECF00B80A54 /* img_list_albums@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_albums@2x.png"; sourceTree = "<group>"; };
+		F22A27821CC61ECF00B80A54 /* img_list_artists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_artists.png; sourceTree = "<group>"; };
+		F22A27831CC61ECF00B80A54 /* img_list_artists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_artists@2x.png"; sourceTree = "<group>"; };
+		F22A27841CC61ECF00B80A54 /* img_list_compilations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_compilations.png; sourceTree = "<group>"; };
+		F22A27851CC61ECF00B80A54 /* img_list_compilations@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_compilations@2x.png"; sourceTree = "<group>"; };
+		F22A27861CC61ECF00B80A54 /* img_list_composers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_composers.png; sourceTree = "<group>"; };
+		F22A27871CC61ECF00B80A54 /* img_list_composers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_composers@2x.png"; sourceTree = "<group>"; };
+		F22A27881CC61ECF00B80A54 /* img_list_playlists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_playlists.png; sourceTree = "<group>"; };
+		F22A27891CC61ECF00B80A54 /* img_list_playlists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_playlists@2x.png"; sourceTree = "<group>"; };
+		F22A278A1CC61ECF00B80A54 /* img_list_songs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_list_songs.png; sourceTree = "<group>"; };
+		F22A278B1CC61ECF00B80A54 /* img_list_songs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_list_songs@2x.png"; sourceTree = "<group>"; };
+		F22A278C1CC61ECF00B80A54 /* img_no_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_no_cover.png; sourceTree = "<group>"; };
+		F22A278D1CC61ECF00B80A54 /* img_no_cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_no_cover@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22A27251CC5CFA300B80A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22A27611CC5CFD200B80A54 /* MediaPlayer.framework in Frameworks */,
+				F22A275F1CC5CFCB00B80A54 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A273E1CC5CFA300B80A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A27491CC5CFA300B80A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F22A271F1CC5CFA300B80A54 = {
+			isa = PBXGroup;
+			children = (
+				F22A272A1CC5CFA300B80A54 /* FeeLoop */,
+				F22A27621CC5CFDE00B80A54 /* Framework */,
+				F22A27441CC5CFA300B80A54 /* FeeLoopTests */,
+				F22A274F1CC5CFA300B80A54 /* FeeLoopUITests */,
+				F22A27291CC5CFA300B80A54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22A27291CC5CFA300B80A54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27281CC5CFA300B80A54 /* FeeLoop.app */,
+				F22A27411CC5CFA300B80A54 /* FeeLoopTests.xctest */,
+				F22A274C1CC5CFA300B80A54 /* FeeLoopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22A272A1CC5CFA300B80A54 /* FeeLoop */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27651CC5D05700B80A54 /* MenuViewController */,
+				F22A276F1CC5EF1100B80A54 /* SongViewController */,
+				F22A27641CC5D04A00B80A54 /* Player */,
+				F22A27631CC5CFFC00B80A54 /* Resource */,
+				F22A272B1CC5CFA300B80A54 /* Supporting Files */,
+			);
+			path = FeeLoop;
+			sourceTree = "<group>";
+		};
+		F22A272B1CC5CFA300B80A54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22A277F1CC61ECF00B80A54 /* Images */,
+				F22A272C1CC5CFA300B80A54 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F22A27441CC5CFA300B80A54 /* FeeLoopTests */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27451CC5CFA300B80A54 /* FeeLoopTests.m */,
+				F22A27471CC5CFA300B80A54 /* Info.plist */,
+			);
+			path = FeeLoopTests;
+			sourceTree = "<group>";
+		};
+		F22A274F1CC5CFA300B80A54 /* FeeLoopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27501CC5CFA300B80A54 /* FeeLoopUITests.m */,
+				F22A27521CC5CFA300B80A54 /* Info.plist */,
+			);
+			path = FeeLoopUITests;
+			sourceTree = "<group>";
+		};
+		F22A27621CC5CFDE00B80A54 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27601CC5CFD200B80A54 /* MediaPlayer.framework */,
+				F22A275E1CC5CFCB00B80A54 /* AVFoundation.framework */,
+			);
+			name = Framework;
+			path = FeeLoopTests;
+			sourceTree = "<group>";
+		};
+		F22A27631CC5CFFC00B80A54 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F22A272E1CC5CFA300B80A54 /* AppDelegate.h */,
+				F22A272F1CC5CFA300B80A54 /* AppDelegate.m */,
+				F22A27341CC5CFA300B80A54 /* Main.storyboard */,
+				F22A27371CC5CFA300B80A54 /* Assets.xcassets */,
+				F22A27391CC5CFA300B80A54 /* LaunchScreen.storyboard */,
+				F22A273C1CC5CFA300B80A54 /* Info.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		F22A27641CC5D04A00B80A54 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		F22A27651CC5D05700B80A54 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F22A276B1CC5D10100B80A54 /* Controller */,
+				F22A276A1CC5D0F900B80A54 /* View */,
+				F22A27691CC5D0B400B80A54 /* Model */,
+			);
+			name = MenuViewController;
+			sourceTree = "<group>";
+		};
+		F22A27691CC5D0B400B80A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F22A277C1CC6043000B80A54 /* MenuModel.h */,
+				F22A277D1CC6043000B80A54 /* MenuModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F22A276A1CC5D0F900B80A54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27731CC5F09A00B80A54 /* MenuView.h */,
+				F22A27741CC5F09A00B80A54 /* MenuView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F22A276B1CC5D10100B80A54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F22A276F1CC5EF1100B80A54 /* SongViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27701CC5EF2F00B80A54 /* Controller */,
+				F22A27711CC5EF3E00B80A54 /* View */,
+				F22A27721CC5EF4400B80A54 /* Model */,
+			);
+			name = SongViewController;
+			sourceTree = "<group>";
+		};
+		F22A27701CC5EF2F00B80A54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F22A27711CC5EF3E00B80A54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F22A276C1CC5D18500B80A54 /* SongView.h */,
+				F22A276D1CC5D18500B80A54 /* SongView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F22A27721CC5EF4400B80A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27661CC5D0A600B80A54 /* SongModel.h */,
+				F22A27671CC5D0A600B80A54 /* SongModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F22A277F1CC61ECF00B80A54 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F22A27801CC61ECF00B80A54 /* img_list_albums.png */,
+				F22A27811CC61ECF00B80A54 /* img_list_albums@2x.png */,
+				F22A27821CC61ECF00B80A54 /* img_list_artists.png */,
+				F22A27831CC61ECF00B80A54 /* img_list_artists@2x.png */,
+				F22A27841CC61ECF00B80A54 /* img_list_compilations.png */,
+				F22A27851CC61ECF00B80A54 /* img_list_compilations@2x.png */,
+				F22A27861CC61ECF00B80A54 /* img_list_composers.png */,
+				F22A27871CC61ECF00B80A54 /* img_list_composers@2x.png */,
+				F22A27881CC61ECF00B80A54 /* img_list_playlists.png */,
+				F22A27891CC61ECF00B80A54 /* img_list_playlists@2x.png */,
+				F22A278A1CC61ECF00B80A54 /* img_list_songs.png */,
+				F22A278B1CC61ECF00B80A54 /* img_list_songs@2x.png */,
+				F22A278C1CC61ECF00B80A54 /* img_no_cover.png */,
+				F22A278D1CC61ECF00B80A54 /* img_no_cover@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22A27271CC5CFA300B80A54 /* FeeLoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22A27551CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoop" */;
+			buildPhases = (
+				F22A27241CC5CFA300B80A54 /* Sources */,
+				F22A27251CC5CFA300B80A54 /* Frameworks */,
+				F22A27261CC5CFA300B80A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeeLoop;
+			productName = FeeLoop;
+			productReference = F22A27281CC5CFA300B80A54 /* FeeLoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F22A27401CC5CFA300B80A54 /* FeeLoopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22A27581CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoopTests" */;
+			buildPhases = (
+				F22A273D1CC5CFA300B80A54 /* Sources */,
+				F22A273E1CC5CFA300B80A54 /* Frameworks */,
+				F22A273F1CC5CFA300B80A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22A27431CC5CFA300B80A54 /* PBXTargetDependency */,
+			);
+			name = FeeLoopTests;
+			productName = FeeLoopTests;
+			productReference = F22A27411CC5CFA300B80A54 /* FeeLoopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F22A274B1CC5CFA300B80A54 /* FeeLoopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22A275B1CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoopUITests" */;
+			buildPhases = (
+				F22A27481CC5CFA300B80A54 /* Sources */,
+				F22A27491CC5CFA300B80A54 /* Frameworks */,
+				F22A274A1CC5CFA300B80A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22A274E1CC5CFA300B80A54 /* PBXTargetDependency */,
+			);
+			name = FeeLoopUITests;
+			productName = FeeLoopUITests;
+			productReference = F22A274C1CC5CFA300B80A54 /* FeeLoopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22A27201CC5CFA300B80A54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = twsit;
+				TargetAttributes = {
+					F22A27271CC5CFA300B80A54 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P98C92623A;
+					};
+					F22A27401CC5CFA300B80A54 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P98C92623A;
+						TestTargetID = F22A27271CC5CFA300B80A54;
+					};
+					F22A274B1CC5CFA300B80A54 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P98C92623A;
+						TestTargetID = F22A27271CC5CFA300B80A54;
+					};
+				};
+			};
+			buildConfigurationList = F22A27231CC5CFA300B80A54 /* Build configuration list for PBXProject "FeeLoop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F22A271F1CC5CFA300B80A54;
+			productRefGroup = F22A27291CC5CFA300B80A54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22A27271CC5CFA300B80A54 /* FeeLoop */,
+				F22A27401CC5CFA300B80A54 /* FeeLoopTests */,
+				F22A274B1CC5CFA300B80A54 /* FeeLoopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22A27261CC5CFA300B80A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22A27981CC61ECF00B80A54 /* img_list_songs.png in Resources */,
+				F22A27901CC61ECF00B80A54 /* img_list_artists.png in Resources */,
+				F22A27941CC61ECF00B80A54 /* img_list_composers.png in Resources */,
+				F22A279B1CC61ECF00B80A54 /* img_no_cover@2x.png in Resources */,
+				F22A27951CC61ECF00B80A54 /* img_list_composers@2x.png in Resources */,
+				F22A278F1CC61ECF00B80A54 /* img_list_albums@2x.png in Resources */,
+				F22A27991CC61ECF00B80A54 /* img_list_songs@2x.png in Resources */,
+				F22A27971CC61ECF00B80A54 /* img_list_playlists@2x.png in Resources */,
+				F22A273B1CC5CFA300B80A54 /* LaunchScreen.storyboard in Resources */,
+				F22A27961CC61ECF00B80A54 /* img_list_playlists.png in Resources */,
+				F22A27911CC61ECF00B80A54 /* img_list_artists@2x.png in Resources */,
+				F22A279A1CC61ECF00B80A54 /* img_no_cover.png in Resources */,
+				F22A278E1CC61ECF00B80A54 /* img_list_albums.png in Resources */,
+				F22A27921CC61ECF00B80A54 /* img_list_compilations.png in Resources */,
+				F22A27931CC61ECF00B80A54 /* img_list_compilations@2x.png in Resources */,
+				F22A27381CC5CFA300B80A54 /* Assets.xcassets in Resources */,
+				F22A27361CC5CFA300B80A54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A273F1CC5CFA300B80A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A274A1CC5CFA300B80A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22A27241CC5CFA300B80A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22A27301CC5CFA300B80A54 /* AppDelegate.m in Sources */,
+				F22A27681CC5D0A600B80A54 /* SongModel.m in Sources */,
+				F22A272D1CC5CFA300B80A54 /* main.m in Sources */,
+				F22A276E1CC5D18500B80A54 /* SongView.m in Sources */,
+				F22A277E1CC6043000B80A54 /* MenuModel.m in Sources */,
+				F22A27751CC5F09A00B80A54 /* MenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A273D1CC5CFA300B80A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22A27461CC5CFA300B80A54 /* FeeLoopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22A27481CC5CFA300B80A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22A27511CC5CFA300B80A54 /* FeeLoopUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F22A27431CC5CFA300B80A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22A27271CC5CFA300B80A54 /* FeeLoop */;
+			targetProxy = F22A27421CC5CFA300B80A54 /* PBXContainerItemProxy */;
+		};
+		F22A274E1CC5CFA300B80A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22A27271CC5CFA300B80A54 /* FeeLoop */;
+			targetProxy = F22A274D1CC5CFA300B80A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F22A27341CC5CFA300B80A54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22A27351CC5CFA300B80A54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F22A27391CC5CFA300B80A54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22A273A1CC5CFA300B80A54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F22A27531CC5CFA300B80A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F22A27541CC5CFA300B80A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22A27561CC5CFA300B80A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FeeLoop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F22A27571CC5CFA300B80A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FeeLoop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F22A27591CC5CFA300B80A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FeeLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeeLoop.app/FeeLoop";
+			};
+			name = Debug;
+		};
+		F22A275A1CC5CFA300B80A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FeeLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeeLoop.app/FeeLoop";
+			};
+			name = Release;
+		};
+		F22A275C1CC5CFA300B80A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FeeLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FeeLoop;
+			};
+			name = Debug;
+		};
+		F22A275D1CC5CFA300B80A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FeeLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FeeLoop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22A27231CC5CFA300B80A54 /* Build configuration list for PBXProject "FeeLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22A27531CC5CFA300B80A54 /* Debug */,
+				F22A27541CC5CFA300B80A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22A27551CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22A27561CC5CFA300B80A54 /* Debug */,
+				F22A27571CC5CFA300B80A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22A27581CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22A27591CC5CFA300B80A54 /* Debug */,
+				F22A275A1CC5CFA300B80A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22A275B1CC5CFA300B80A54 /* Build configuration list for PBXNativeTarget "FeeLoopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22A275C1CC5CFA300B80A54 /* Debug */,
+				F22A275D1CC5CFA300B80A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22A27201CC5CFA300B80A54 /* Project object */;
+}
