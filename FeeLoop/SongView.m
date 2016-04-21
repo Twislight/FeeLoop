@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     self.title = self.song.titleitem;
+    _listType = self.song.listType;
     [self loadCollections];
     
 }

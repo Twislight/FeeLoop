@@ -30,22 +30,27 @@
     
     list = [MenuModel new];
     list.titleitem = @"歌曲";
+    list.listType = song_list;
     [lists addObject:list];
     
     list = [MenuModel new];
     list.titleitem = @"专辑";
+    list.listType = album_list;
     [lists addObject:list];
     
     list = [MenuModel new];
     list.titleitem = @"表演者";
+    list.listType = artist_list;
     [lists addObject:list];
     
     list = [MenuModel new];
     list.titleitem = @"选集";
+    list.listType = compilation_list;
     [lists addObject:list];
     
     list = [MenuModel new];
     list.titleitem = @"作曲";
+    list.listType = composer_list;
     [lists addObject:list];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
