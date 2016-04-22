@@ -10,7 +10,4 @@
 
 @interface SongModel : NSObject
 
-@property (nonatomic,strong) NSString *itemtitle;
-@property (nonatomic) NSInteger *num;
-
 @end

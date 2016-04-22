@@ -24,10 +24,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    lists = [[NSMutableArray alloc]initWithCapacity:10];
+    [self saveSongList];
+        // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void) saveSongList
+{
+    lists = [[NSMutableArray alloc]initWithCapacity:5];//暂且初始化5个，提高内存利用率
     
     MenuModel *list;//创建MenuModel类型的list对象
-    
+    //储存队列
     list = [MenuModel new];
     list.titleitem = @"歌曲";
     list.listType = song_list;
@@ -52,14 +62,7 @@
     list.titleitem = @"作曲";
     list.listType = composer_list;
     [lists addObject:list];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

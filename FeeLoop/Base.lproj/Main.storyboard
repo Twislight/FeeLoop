@@ -28,7 +28,13 @@
                             <outlet property="delegate" destination="rPH-WG-BEi" id="rsD-Yl-VYL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="FeeLoop" id="yoN-hs-r5f"/>
+                    <navigationItem key="navigationItem" title="FeeLoop" id="yoN-hs-r5f">
+                        <barButtonItem key="rightBarButtonItem" title="正在播放" id="hBI-C6-ual">
+                            <connections>
+                                <segue destination="4oC-Cv-ufl" kind="show" identifier="playNow" id="c7g-nE-3Dk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="FW6-8S-0uA" kind="show" identifier="showSong" id="CzW-4Q-wbh"/>
                     </connections>
@@ -60,10 +66,54 @@
                             <outlet property="delegate" destination="FW6-8S-0uA" id="VdM-LC-qVP"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="qX3-M9-iYk"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4oC-Cv-ufl" kind="show" identifier="songPlay" id="d9i-yT-o08"/>
+                        <segue destination="Gsw-uc-s2J" kind="show" identifier="showDetail" id="FeK-lR-6Sn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXa-cm-LVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="301"/>
+        </scene>
+        <!--Detail View-->
+        <scene sceneID="ZhZ-eB-bb3">
+            <objects>
+                <tableViewController id="Gsw-uc-s2J" customClass="DetailView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2sn-Ww-eZW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailList" id="kly-ES-8T7">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kly-ES-8T7" id="el3-Vw-uuR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gsw-uc-s2J" id="sF0-oe-9h1"/>
+                            <outlet property="delegate" destination="Gsw-uc-s2J" id="wmZ-ku-jS6"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="RnH-D1-nY1"/>
+                        <barButtonItem title="Item" id="lyT-df-qYU"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4oC-Cv-ufl" kind="show" identifier="detailPlay" id="D4I-k4-AZs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnQ-sj-dOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2483" y="301"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GLk-oh-Esp">
@@ -76,12 +126,73 @@
                     <view key="view" contentMode="scaleToFill" id="TIj-Ee-kb3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KW-xD-0P2">
+                                <rect key="frame" x="285" y="540" width="30" height="30"/>
+                                <state key="normal" title="播放"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOb-ql-o3Z">
+                                <rect key="frame" x="330" y="540" width="45" height="30"/>
+                                <state key="normal" title="下一首"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll8-be-9rL">
+                                <rect key="frame" x="221" y="540" width="45" height="30"/>
+                                <state key="normal" title="上一首"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pft-0u-mmj">
+                                <rect key="frame" x="123" y="485" width="30" height="30"/>
+                                <state key="normal" title="随机"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or8-kr-uhi">
+                                <rect key="frame" x="364" y="485" width="30" height="30"/>
+                                <state key="normal" title="循环"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-VB-Sfa">
+                                <rect key="frame" x="435" y="485" width="45" height="30"/>
+                                <state key="normal" title="单循二"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKR-an-LUh">
+                                <rect key="frame" x="509" y="485" width="45" height="30"/>
+                                <state key="normal" title="单循三"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol1-EM-Lb4">
+                                <rect key="frame" x="40" y="485" width="30" height="30"/>
+                                <state key="normal" title="单循"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ocx-dj-Ieb">
+                                <rect key="frame" x="57" y="421" width="499" height="31"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELv-kZ-JOz">
+                                <rect key="frame" x="180" y="114" width="240" height="229"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br5-k2-k00">
+                                <rect key="frame" x="323" y="114" width="240" height="229"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6s-zB-Urg">
+                                <rect key="frame" x="34" y="381" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2F-oq-nrg">
+                                <rect key="frame" x="521" y="381" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vb-Wl-j01">
+                                <rect key="frame" x="20" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usi-UM-pLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2441" y="301"/>
+            <point key="canvasLocation" x="1780" y="1172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LCa-5Q-9n9">
@@ -99,7 +210,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6T-uD-0KJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="301"/>
+            <point key="canvasLocation" x="388" y="301"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="c7g-nE-3Dk"/>
+    </inferredMetricsTieBreakers>
 </document>
