@@ -15,7 +15,8 @@
 @interface DetailView : UITableViewController
 
 @property (nonatomic,strong) MenuModel *detail;
+
 @property (nonatomic) SongListType listType;
-@property (nonatomic,strong) MPMediaItemCollection *collection;
+@property (nonatomic,strong) MPMediaItemCollection *detailCollection;
 
 @end

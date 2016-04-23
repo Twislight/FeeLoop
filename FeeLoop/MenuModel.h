@@ -21,7 +21,7 @@ typedef enum { song_list, album_list, artist_list,compilation_list, composer_lis
 //
 @property (nonatomic) SongListType listType;
 @property (nonatomic,strong) NSString *titleitem;
-@property (nonatomic,strong) MPMediaItemCollection *collection;
+@property (nonatomic,strong) MPMediaItemCollection *itemCollection;
 
 
 - (NSString *) titleForRow: (int) row;

@@ -44,7 +44,7 @@
 //    NSLog(@"%@",titleItems);
     list = [MenuModel new];
     list.titleitem = titleItems;
-    list.collection = collection;
+    list.itemCollection = collection;
     [lists addObject:list];
 }
 
@@ -131,8 +131,6 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
     if (_listType == song_list)//如果是歌曲列表则直接播放
     {
         [self performSegueWithIdentifier:@"songPlay" sender:nil];
