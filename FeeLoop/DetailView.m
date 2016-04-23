@@ -20,7 +20,7 @@
     
     self.title = self.detail.titleitem;//获取标题
     _detailCollection = self.detail.itemCollection;
-    NSLog(@"%lu",(unsigned long)[_detailCollection.items count]);
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -40,19 +40,18 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    NSLog(@"%lu",(unsigned long)[_detailCollection.items count]);
-    return [_detailCollection.items count];
+    return [_detailCollection.items count];//返回行数
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 55.0;
+    return 55.0;//返回行高
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailList"];
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"detailList"];
+
     
     MPMediaItem *item = [_detailCollection.items objectAtIndex:indexPath.row];
     cell.textLabel.text = [item valueForProperty: MPMediaItemPropertyTitle];
