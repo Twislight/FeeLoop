@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C421E8EE45DE793C5F6DA92E86127E8848F8025C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF07E1BAA087C374FE7A771FE5438B1EE2AAC8A5" : 0,
+    "C421E8EE45DE793C5F6DA92E86127E8848F8025C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "778B8928-5940-47C2-8BD3-DCE643425D6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF07E1BAA087C374FE7A771FE5438B1EE2AAC8A5" : "FeeLoop\/FeeLoop\/UIImage-ImageEffects\/",
+    "C421E8EE45DE793C5F6DA92E86127E8848F8025C" : "FeeLoop\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FeeLoop",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FeeLoop.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Twislight\/UIImage-ImageEffects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF07E1BAA087C374FE7A771FE5438B1EE2AAC8A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Twislight\/FeeLoop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C421E8EE45DE793C5F6DA92E86127E8848F8025C"
+    }
+  ]
+}

@@ -8,8 +8,12 @@
 
 #import "DetailView.h"
 #import "MenuModel.h"
+#import "PlayerController.h"
 
 @interface DetailView ()
+{
+    NSMutableArray *lists;//可变数组
+}
 
 @end
 
@@ -26,6 +30,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+//保存音乐信息
+-(void)playList :(NSInteger)songRow :(MPMediaItemCollection *)songCollection
+{
+    lists = [[NSMutableArray alloc]initWithCapacity:1];
+    MenuModel *list;
+    list = [MenuModel new];
+    list.songRows = songRow;
+    list.itemCollection = songCollection;
+    [lists addObject:list];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,10 +75,29 @@
     UIImage *artwork = nil;
     if ([item valueForProperty:MPMediaItemPropertyArtwork])
         artwork = [[item valueForProperty:MPMediaItemPropertyArtwork] imageWithSize:CGSizeMake(60, 60)];
-    if (artwork == nil) artwork = [UIImage imageNamed: @"img_no_cover"];
+//        artwork = [item valueForProperty:MPMediaItemPropertyArtwork];
+    if (artwork == nil)
+        artwork = [UIImage imageNamed: @"img_no_cover"];
     cell.imageView.image = artwork;
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger songRow = indexPath.row;
+    [self playList:songRow :self.detailCollection];
+    MenuModel *itemcell = lists[0];
+    [self performSegueWithIdentifier:@"detailPlay" sender:itemcell];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"detailPlay"])
+    {
+        PlayerController *items = segue.destinationViewController;
+        items.songDetail = sender;
+    }
 }
 
 @end

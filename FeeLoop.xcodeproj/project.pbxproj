@@ -35,6 +35,10 @@
 		F22A279A1CC61ECF00B80A54 /* img_no_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278C1CC61ECF00B80A54 /* img_no_cover.png */; };
 		F22A279B1CC61ECF00B80A54 /* img_no_cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F22A278D1CC61ECF00B80A54 /* img_no_cover@2x.png */; };
 		F22A27A21CC8D41000B80A54 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27A11CC8D41000B80A54 /* DetailView.m */; };
+		F22A27A81CCB49BF00B80A54 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27A71CCB49BF00B80A54 /* PlayerController.m */; };
+		F22A27AB1CCB49D800B80A54 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27AA1CCB49D800B80A54 /* PlayerView.m */; };
+		F22A27AE1CCB49EE00B80A54 /* PlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F22A27AD1CCB49EE00B80A54 /* PlayerModel.m */; };
+		F23A8DAD1CCE451F007B0801 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A8DAC1CCE451F007B0801 /* empty@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,13 @@
 		F22A278D1CC61ECF00B80A54 /* img_no_cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_no_cover@2x.png"; sourceTree = "<group>"; };
 		F22A27A01CC8D41000B80A54 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
 		F22A27A11CC8D41000B80A54 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		F22A27A61CCB49BF00B80A54 /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		F22A27A71CCB49BF00B80A54 /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		F22A27A91CCB49D800B80A54 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		F22A27AA1CCB49D800B80A54 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		F22A27AC1CCB49EE00B80A54 /* PlayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerModel.h; sourceTree = "<group>"; };
+		F22A27AD1CCB49EE00B80A54 /* PlayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerModel.m; sourceTree = "<group>"; };
+		F23A8DAC1CCE451F007B0801 /* empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +302,7 @@
 		F22A277F1CC61ECF00B80A54 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F23A8DAC1CCE451F007B0801 /* empty@2x.png */,
 				F22A27801CC61ECF00B80A54 /* img_list_albums.png */,
 				F22A27811CC61ECF00B80A54 /* img_list_albums@2x.png */,
 				F22A27821CC61ECF00B80A54 /* img_list_artists.png */,
@@ -345,6 +357,8 @@
 		F22A27A31CC925B900B80A54 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F22A27A61CCB49BF00B80A54 /* PlayerController.h */,
+				F22A27A71CCB49BF00B80A54 /* PlayerController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -352,6 +366,8 @@
 		F22A27A41CC925BC00B80A54 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F22A27A91CCB49D800B80A54 /* PlayerView.h */,
+				F22A27AA1CCB49D800B80A54 /* PlayerView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -359,6 +375,8 @@
 		F22A27A51CC925BF00B80A54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F22A27AC1CCB49EE00B80A54 /* PlayerModel.h */,
+				F22A27AD1CCB49EE00B80A54 /* PlayerModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -474,6 +492,7 @@
 				F22A27941CC61ECF00B80A54 /* img_list_composers.png in Resources */,
 				F22A279B1CC61ECF00B80A54 /* img_no_cover@2x.png in Resources */,
 				F22A27951CC61ECF00B80A54 /* img_list_composers@2x.png in Resources */,
+				F23A8DAD1CCE451F007B0801 /* empty@2x.png in Resources */,
 				F22A278F1CC61ECF00B80A54 /* img_list_albums@2x.png in Resources */,
 				F22A27991CC61ECF00B80A54 /* img_list_songs@2x.png in Resources */,
 				F22A27971CC61ECF00B80A54 /* img_list_playlists@2x.png in Resources */,
@@ -516,6 +535,9 @@
 				F22A276E1CC5D18500B80A54 /* SongView.m in Sources */,
 				F22A277E1CC6043000B80A54 /* MenuModel.m in Sources */,
 				F22A27A21CC8D41000B80A54 /* DetailView.m in Sources */,
+				F22A27A81CCB49BF00B80A54 /* PlayerController.m in Sources */,
+				F22A27AB1CCB49D800B80A54 /* PlayerView.m in Sources */,
+				F22A27AE1CCB49EE00B80A54 /* PlayerModel.m in Sources */,
 				F22A27751CC5F09A00B80A54 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,10 +680,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeeLoop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -670,10 +693,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeeLoop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = twislight.FeeLoop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

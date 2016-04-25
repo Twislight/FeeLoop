@@ -11,11 +11,12 @@
 #import "MenuView.h"
 #import "MenuModel.h"
 #import "DetailView.h"
+#import "PlayerController.h"
 
 @interface SongView ()
 
 {
-    NSMutableArray *lists;//可变数组
+    NSMutableArray *lists;//可变数组储存音乐对象
 }
 
 @end
@@ -129,11 +130,24 @@
     return cell;
 }
 
+-(void)playList :(NSInteger)songRow :(MPMediaItemCollection *)songCollection
+{
+    lists = [[NSMutableArray alloc]initWithCapacity:1];
+    MenuModel *list;
+    list = [MenuModel new];
+    list.songRows = songRow;
+    list.itemCollection = songCollection;
+    [lists addObject:list];
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (_listType == song_list)//如果是歌曲列表则直接播放
     {
-        [self performSegueWithIdentifier:@"songPlay" sender:nil];
+        NSInteger songRow = indexPath.row;
+        [self playList:songRow :nil];
+        MenuModel *itemcell = lists[0];
+        [self performSegueWithIdentifier:@"songPlay" sender:itemcell];
     }
     else//如果是专辑等其他列表则进入下一列表
     {
@@ -151,11 +165,23 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showDetail"])
+    if(_listType == song_list)
     {
-        DetailView *items = segue.destinationViewController;
-        items.detail = sender;
+        if ([segue.identifier isEqualToString:@"songPlay"])
+        {
+            PlayerController *items = segue.destinationViewController;
+            items.songDetail = sender;
+        }
     }
+    else
+    {
+        if ([segue.identifier isEqualToString:@"showDetail"])
+        {
+            DetailView *items = segue.destinationViewController;
+            items.detail = sender;
+        }
+    }
+    
 }
 
 
