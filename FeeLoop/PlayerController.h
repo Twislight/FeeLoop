@@ -15,9 +15,10 @@
 @property (nonatomic,strong) MenuModel *songDetail;
 @property (nonatomic) NSInteger songRow;
 @property (nonatomic,strong) MPMediaItemCollection *detailCollection;
-@property (nonatomic) MPMediaQuery *songQuery;
+@property (nonatomic) MPMediaQuery *songQuery;//音乐队列
 @property (nonatomic,strong) NSArray *songItems;
 @property (nonatomic,strong) MPMediaItem *songItem;
+@property (nonatomic,strong) MPMusicPlayerController *rowControl;
 
 @property (weak, nonatomic) IBOutlet UIImageView *artImageView;//专辑图片
 @property (weak, nonatomic) IBOutlet UIImageView *backImageView;//背景图片
@@ -28,11 +29,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *rightNow;//当前时间
 @property (weak, nonatomic) IBOutlet UILabel *totalTime;//总时间
 
-@property (weak, nonatomic) IBOutlet UIButton *playPause;//播放暂停
-@property (weak, nonatomic) IBOutlet UIButton *nextBut;//下一曲
-@property (weak, nonatomic) IBOutlet UIButton *previousBut;//上一曲
-
-@property (weak, nonatomic) IBOutlet UIButton *setBut;//播放模式按钮
+- (IBAction)playPause:(id)sender;//播放暂停
+- (IBAction)nextBut:(id)sender;//下一曲
+- (IBAction)previousBut:(id)sender;//上一曲
+- (IBAction)setBut:(id)sender;//播放模式
 
 @property (nonatomic,assign) NSInteger *setCount;//设置播放模式
 

@@ -89,6 +89,7 @@
     [self playList:songRow :self.detailCollection];
     MenuModel *itemcell = lists[0];
     [self performSegueWithIdentifier:@"detailPlay" sender:itemcell];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

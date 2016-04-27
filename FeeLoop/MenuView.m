@@ -106,6 +106,7 @@
 {
     MenuModel *itemcell = lists[indexPath.row];
     [self performSegueWithIdentifier:@"showSong" sender:itemcell];//使用segue进行跳转下一场景
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 //进入下一个场景

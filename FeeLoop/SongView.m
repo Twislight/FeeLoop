@@ -160,7 +160,7 @@
         MenuModel *itemcell = lists[0];
         [self performSegueWithIdentifier:@"showDetail" sender:itemcell];
     }
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
