@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.title = self.song.titleitem;//获取标题
     _listType = self.song.listType;//获取音乐类型
     [self loadCollections];//加载音乐队列
@@ -42,7 +43,7 @@
 {
     lists = [[NSMutableArray alloc]initWithCapacity:1];
     MenuModel *list;
-//    NSLog(@"%@",titleItems);
+
     list = [MenuModel new];
     list.titleitem = titleItems;
     list.itemCollection = collection;
@@ -144,9 +145,12 @@
 {
     if (_listType == song_list)//如果是歌曲列表则直接播放
     {
+        
         NSInteger songRow = indexPath.row;
         [self playList:songRow :nil];
         MenuModel *itemcell = lists[0];
+        extern NSString *gsongSet;
+        gsongSet = @"songsSet";
         [self performSegueWithIdentifier:@"songPlay" sender:itemcell];
     }
     else//如果是专辑等其他列表则进入下一列表
@@ -156,8 +160,10 @@
         NSString *property                  = [MPMediaItem titlePropertyForGroupingType: _songQuery.groupingType ];
         NSString *title                     = [item valueForProperty: property];
         [self songDetailList:title :collection];
-//        NSLog(@"%d",indexPath.row);
+
         MenuModel *itemcell = lists[0];
+        extern NSString *gsongSet;
+        gsongSet = @"detailSet";
         [self performSegueWithIdentifier:@"showDetail" sender:itemcell];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

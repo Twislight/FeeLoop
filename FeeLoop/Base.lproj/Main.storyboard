@@ -152,7 +152,7 @@
                                     <constraint firstAttribute="height" constant="30" id="RpJ-5j-pRJ"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="actionSlider:" destination="4oC-Cv-ufl" eventType="valueChanged" id="p2a-tn-gim"/>
+                                    <action selector="actionSlider:" destination="4oC-Cv-ufl" eventType="valueChanged" id="qcx-Vr-uTF"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvb-TC-VJE">
@@ -163,7 +163,7 @@
                                 </constraints>
                                 <state key="normal" title="Play"/>
                                 <connections>
-                                    <action selector="playPause:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="PJV-2k-qZB"/>
+                                    <action selector="palyAndPayse:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="g4r-XD-8nm"/>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmi-68-vhg">
@@ -195,7 +195,7 @@
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="previousBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="7kI-Oi-AeF"/>
+                                    <action selector="preciousBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="qQA-Wo-BcL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEf-fL-Im7">
@@ -206,18 +206,18 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="oHX-Jz-TFJ"/>
+                                    <action selector="nextBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="bFI-qq-1PH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxT-2q-LgO">
-                                <rect key="frame" x="21" y="607" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4J-Yz-rdq">
+                                <rect key="frame" x="304" y="607" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="A2l-Gs-Jn8"/>
-                                    <constraint firstAttribute="height" constant="50" id="Rty-i8-IwB"/>
+                                    <constraint firstAttribute="height" constant="50" id="3kR-70-f3K"/>
+                                    <constraint firstAttribute="width" constant="50" id="Sn0-oB-Twh"/>
                                 </constraints>
-                                <state key="normal" title="Set"/>
+                                <state key="normal" title="Stop"/>
                                 <connections>
-                                    <action selector="setBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="w4M-D4-LiA"/>
+                                    <action selector="stopBut:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="d5h-fU-CVa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szm-WK-3On">
@@ -240,6 +240,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxT-2q-LgO">
+                                <rect key="frame" x="21" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="A2l-Gs-Jn8"/>
+                                    <constraint firstAttribute="height" constant="50" id="Rty-i8-IwB"/>
+                                </constraints>
+                                <state key="normal" title="Set"/>
+                                <connections>
+                                    <action selector="setMode:" destination="4oC-Cv-ufl" eventType="touchUpInside" id="uUt-tP-f1l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -250,11 +261,13 @@
                             <constraint firstItem="xrg-B8-hXG" firstAttribute="top" secondItem="mmi-68-vhg" secondAttribute="bottom" id="C8r-hr-8bO"/>
                             <constraint firstItem="szm-WK-3On" firstAttribute="centerY" secondItem="ocx-dj-Ieb" secondAttribute="centerY" id="FJE-jf-Yf7"/>
                             <constraint firstItem="hEf-fL-Im7" firstAttribute="leading" secondItem="Tvb-TC-VJE" secondAttribute="trailing" constant="20" id="Fxb-kK-FaS"/>
+                            <constraint firstItem="xrg-B8-hXG" firstAttribute="top" secondItem="k4J-Yz-rdq" secondAttribute="bottom" constant="10" id="IAt-OT-fMZ"/>
                             <constraint firstItem="szm-WK-3On" firstAttribute="leading" secondItem="TIj-Ee-kb3" secondAttribute="leadingMargin" constant="-12" id="J6M-W8-OCZ"/>
                             <constraint firstItem="Tvb-TC-VJE" firstAttribute="top" secondItem="mVg-hb-sEY" secondAttribute="bottom" id="Joj-K6-1DC"/>
                             <constraint firstItem="mmi-68-vhg" firstAttribute="centerX" secondItem="TIj-Ee-kb3" secondAttribute="centerX" id="Lce-GX-7XA"/>
                             <constraint firstItem="ac5-08-DKA" firstAttribute="top" secondItem="jo5-cM-vka" secondAttribute="bottom" id="Lfs-B5-2MV"/>
                             <constraint firstItem="bxT-2q-LgO" firstAttribute="leading" secondItem="TIj-Ee-kb3" secondAttribute="leadingMargin" constant="5" id="QP1-t1-3HW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k4J-Yz-rdq" secondAttribute="trailing" constant="5" id="SsE-xe-kWp"/>
                             <constraint firstItem="9UV-pr-JCe" firstAttribute="centerX" secondItem="TIj-Ee-kb3" secondAttribute="centerX" id="TGe-07-FOd"/>
                             <constraint firstItem="mmi-68-vhg" firstAttribute="height" secondItem="9UV-pr-JCe" secondAttribute="height" id="TJq-Ec-ccD"/>
                             <constraint firstItem="Tvb-TC-VJE" firstAttribute="centerX" secondItem="TIj-Ee-kb3" secondAttribute="centerX" id="UrD-gt-XoS"/>

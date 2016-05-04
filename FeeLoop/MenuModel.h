@@ -22,7 +22,7 @@ typedef enum { song_list, album_list, artist_list,compilation_list, composer_lis
 @property (nonatomic) SongListType listType;//音乐类型
 @property (nonatomic,strong) NSString *titleitem;//标题
 @property (nonatomic,strong) MPMediaItemCollection *itemCollection;//音乐队列
-@property (nonatomic) NSInteger songRows;//行号
+@property (nonatomic,assign) NSInteger songRows;//行号
 
 
 - (NSString *) titleForRow: (int) row;

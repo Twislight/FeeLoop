@@ -88,6 +88,10 @@
     NSInteger songRow = indexPath.row;
     [self playList:songRow :self.detailCollection];
     MenuModel *itemcell = lists[0];
+    
+    extern NSString *gsongSet;
+    gsongSet = @"detailSet";
+    
     [self performSegueWithIdentifier:@"detailPlay" sender:itemcell];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
