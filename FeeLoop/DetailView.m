@@ -2,7 +2,7 @@
 //  DetailView.m
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/21.
+//  Created by 贾亚丽 on 16/4/21.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
@@ -66,7 +66,6 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailList"];
-
     
     MPMediaItem *item = [_detailCollection.items objectAtIndex:indexPath.row];
     cell.textLabel.text = [item valueForProperty: MPMediaItemPropertyTitle];

@@ -2,7 +2,7 @@
 //  DetailView.h
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/21.
+//  Created by 贾亚丽 on 16/4/21.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 

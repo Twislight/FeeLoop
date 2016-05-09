@@ -2,12 +2,11 @@
 //  MenuView.m
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/19.
+//  Created by 贾亚丽 on 16/4/19.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
 #import "MenuView.h"
-#import "SongModel.h"
 #import "SongView.h"
 #import "MenuModel.h"
 
@@ -23,9 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    [self saveSongList];
+
+    [self saveSongList];//储存列表队列
         // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -33,10 +31,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
--(void) saveSongList
+-(void) saveSongList//储存列表队列
 {
     lists = [[NSMutableArray alloc]initWithCapacity:5];//暂且初始化5个，提高内存利用率
-    
     MenuModel *list;//创建MenuModel类型的list对象
     //储存队列
     list = [MenuModel new];
@@ -119,8 +116,5 @@
         items.song = sender;
     }
 }
-
-
-
 
 @end

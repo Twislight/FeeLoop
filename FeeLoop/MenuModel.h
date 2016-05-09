@@ -2,7 +2,7 @@
 //  MenuModel.h
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/19.
+//  Created by 贾亚丽 on 16/4/19.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
@@ -23,7 +23,6 @@ typedef enum { song_list, album_list, artist_list,compilation_list, composer_lis
 @property (nonatomic,strong) NSString *titleitem;//标题
 @property (nonatomic,strong) MPMediaItemCollection *itemCollection;//音乐队列
 @property (nonatomic,assign) NSInteger songRows;//行号
-
 
 - (NSString *) titleForRow: (int) row;
 - (NSString *) imageNameForRow: (int) row;

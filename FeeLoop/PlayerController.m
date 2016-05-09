@@ -2,7 +2,7 @@
 //  PlayerController.m
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/23.
+//  Created by 贾亚丽 on 16/4/23.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
@@ -25,18 +25,13 @@
     
     [self setSongPlayer];//设置播放器
     
-    
     [self loadSomething:_playResource];//加载信息
-    
     
     [self loadNowPlaying];//加载当前播放
     
     [self setloopMode];
     
     [self createTimer];
-    
-//    _refreshTime = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(loadRightNowTime) userInfo:nil repeats:YES];
-//    [_refreshTime setFireDate:[NSDate distantFuture]];
     
     // Do any additional setup after loading the view.
 }
@@ -71,7 +66,6 @@
     if (playSource == nil)
     {
         [self loadNowPlaying];
-
     }
     else if ([playSource isEqual: @"songsSet"])
     {
@@ -84,6 +78,7 @@
         _songItems = [_songQuery items];
         [_songPlayer setNowPlayingItem:[_songItems objectAtIndex:_songRow]];
         [_songPlayer play];
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Pause.png"] forState:UIControlStateNormal];
         
     }
     else
@@ -94,6 +89,7 @@
         [_songPlayer setQueueWithItemCollection:_detailCollection];
         [_songPlayer setNowPlayingItem:_songItem];
         [_songPlayer play];
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Pause.png"] forState:UIControlStateNormal];
     }
 
     [self loadImage:_songRow :_songItem];//加载所选歌曲专辑封面
@@ -133,15 +129,20 @@
     [self loadImage:songRowNum :item];//加载专辑封面
 }
 
-
 -(void) loadNowPlaying
 {
     MPMediaItem *item = _songPlayer.nowPlayingItem;//当前播放的音乐条目
     NSUInteger songRowNum = _songPlayer.indexOfNowPlayingItem;//当前播放的音乐所在队列的序号
     [self loadImage:songRowNum :item];//加载专辑封面
+    if(_songPlayer.playbackState == MPMusicPlaybackStatePlaying)
+    {
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Pause.png"] forState:UIControlStateNormal];
+    }
+    else
+    {
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Play.png"] forState:UIControlStateNormal];
+    }
 }
-
-
 
 -(void) dealloc//销毁通知
 {
@@ -178,9 +179,7 @@
 //    NSLog(@"%f",rightNo / songTime);
 }
 
-
-
-- (IBAction)palyAndPayse:(UIButton *)sender//播放暂停
+- (IBAction)playAndPause:(UIButton *)sender
 {
     if (_songPlayer.playbackState == 1)
     {
@@ -191,12 +190,15 @@
     {
         [_songPlayer play];
         [_refreshTime setFireDate:[NSDate date]];
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Pause.png"] forState:UIControlStateNormal];
     }
     else
     {
         [_songPlayer pause];
         [_refreshTime setFireDate:[NSDate distantFuture]];
+        [_playPause setBackgroundImage:[UIImage imageNamed:@"Play.png"] forState:UIControlStateNormal];
     }
+
 }
 
 - (IBAction)nextBut:(id)sender//下一曲

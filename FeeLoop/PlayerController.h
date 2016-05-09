@@ -2,7 +2,7 @@
 //  PlayerController.h
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/23.
+//  Created by 贾亚丽 on 16/4/23.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
@@ -32,17 +32,13 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *rightNow;//当前时间
 @property (weak, nonatomic) IBOutlet UILabel *totalTime;//总时间
-
-
-- (IBAction)palyAndPayse:(UIButton *)sender;//播放暂停
+@property (weak, nonatomic) IBOutlet UIButton *playPause;
+- (IBAction)playAndPause:(UIButton *)sender;//播放暂停
 - (IBAction)nextBut:(id)sender;//下一曲
 
 - (IBAction)preciousBut:(id)sender;//上一曲
 
 - (IBAction)stopBut:(id)sender;//停止播放
 - (IBAction)setMode:(UIButton *)sender;//设置循环模式
-
-//@property (nonatomic,assign) NSInteger *setCount;//设置播放模式
-
 
 @end

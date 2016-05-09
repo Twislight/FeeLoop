@@ -2,12 +2,12 @@
 //  SongView.m
 //  FeeLoop
 //
-//  Created by 郑翔匀 on 16/4/19.
+//  Created by 贾亚丽 on 16/4/19.
 //  Copyright © 2016年 twsit. All rights reserved.
 //
 
 #import "SongView.h"
-#import "SongModel.h"
+//#import "SongModel.h"
 #import "MenuView.h"
 #import "MenuModel.h"
 #import "DetailView.h"
